@@ -1,0 +1,15 @@
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.about-home {
+  width: 60%;
+}
+.instructor {
+  width: 30%;
+}
+.lesson {
+  width: 30%;
+}
