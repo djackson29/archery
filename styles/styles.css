@@ -1,9 +1,22 @@
 body {
-  font-family: Inter, sans-serif;
+  font-family: Arial, sans-serif;
 }
-h1, h2, h3, h4, h5, h6 {
-  font-family: Crimson, serif;
+h1 {
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  font-size: 2.5em;
 }
+h2 {
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+h3 {
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  font-size: 1em;
+}
+
 .grid-container {
   display: grid;
   grid-template-columns: 32% 32% 32%;
@@ -14,11 +27,29 @@ h1, h2, h3, h4, h5, h6 {
 .header {
   grid-column: 1 / 4;
   grid-row: 1 / 2;
+  background-color: #03A3DF;
+  color: white;
 }
 footer {
   grid-column: 1 / 4;
   grid-row: 6 / 7;
   color: white;
+}
+footer a:link, a:visited, a:active {
+  color: white;
+  text-decoration: none;
+}
+footer a:hover {
+  color: white;
+  text-decoration: underline;
+}
+.footer-image {
+  height: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  padding: 2rem;
 }
 .services-about {
   grid-column: 1 / 3;
