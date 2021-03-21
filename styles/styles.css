@@ -1,15 +1,54 @@
-.flex-container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
+body {
+  font-family: Inter, sans-serif;
 }
-.about-home {
-  width: 60%;
+h1, h2, h3, h4, h5, h6 {
+  font-family: Crimson, serif;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: 32% 32% 32%;
+  grid-template-rows: auto auto auto auto auto auto;
+  grid-gap: .5rem;
+  justify-content: space-evenly;
+}
+.header {
+  grid-column: 1 / 4;
+  grid-row: 1 / 2;
+}
+footer {
+  grid-column: 1 / 4;
+  grid-row: 6 / 7;
+  color: white;
+}
+.services-about {
+  grid-column: 1 / 3;
+  grid-row: 2 / 6;
+}
+.schedule {
+  grid-column: 3 / 4;
+  grid-row: 2 / 6;
+}
+.about-archery {
+  grid-column: 1 / 4;
+  grid-row: 2 / 5;
 }
 .instructor {
-  width: 30%;
+  grid-column: span 1;
+  grid-row: 5 / 6;
 }
-.lesson {
-  width: 30%;
+.group-classes-sub-heading {
+  grid-column: 1 / 4;
+  grid-row: 2 / 3;
+}
+.group-classes {
+  grid-column: span 1;
+  grid-row: 3 / 4;
+}
+.private-classes-sub-heading {
+  grid-column: 1 / 4;
+  grid-row: 4 / 5;
+}
+.private-classes {
+  grid-column: span 1;
+  grid-row: 5 / 6;
 }
