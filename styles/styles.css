@@ -1,5 +1,6 @@
 body {
   font-family: Arial, sans-serif;
+  color: #444444;
 }
 h1 {
   font-family: Arial, sans-serif;
@@ -29,6 +30,26 @@ h3 {
   grid-row: 1 / 2;
   background-color: #03A3DF;
   color: white;
+  padding: 1rem;
+}
+.header img{
+  margin-left: 2rem;
+}
+nav {
+  float: right;
+  margin: 2rem;
+  font-size: 1.5em;
+}
+nav a {
+  padding: 1rem;
+}
+nav a:link, a:visited, a:active {
+  color: white;
+  text-decoration: none;
+}
+nav a:hover {
+  color: white;
+  text-decoration: underline;
 }
 footer {
   grid-column: 1 / 4;
@@ -51,6 +72,10 @@ footer a:hover {
   position: relative;
   padding: 2rem;
 }
+.nondiscriminatory {
+  grid-column: 1 / 4;
+  grid-row: 2 / 6;
+}
 .services-about {
   grid-column: 1 / 3;
   grid-row: 2 / 6;
@@ -66,7 +91,19 @@ footer a:hover {
 .instructor {
   grid-column: span 1;
   grid-row: 5 / 6;
+  background-color: #1B447F;
+  color: white;
+  padding: 1rem;
 }
+
+.instructor img {
+  float: right;
+  padding: .5rem;
+}
+.instructor h3 {
+  color: #ECB722;
+}
+
 .group-classes-sub-heading {
   grid-column: 1 / 4;
   grid-row: 2 / 3;
@@ -82,4 +119,5 @@ footer a:hover {
 .private-classes {
   grid-column: span 1;
   grid-row: 5 / 6;
+
 }
