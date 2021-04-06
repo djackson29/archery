@@ -2,6 +2,11 @@ body {
   font-family: Arial, sans-serif;
   color: #444444;
 }
+
+body a {
+  color: blue;
+}
+
 h1 {
   font-family: Arial, sans-serif;
   font-weight: bold;
@@ -25,14 +30,34 @@ h3 {
   grid-gap: .5rem;
   justify-content: space-evenly;
 }
-.header {
+
+.hidden {
+  position: relative;
+  left: -10000px;
+  top: auto;
+}
+
+.hidden:focus {
+  left: 0;
+}
+
+.sr-only {
+  position: relative;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+header {
   grid-column: 1 / 4;
   grid-row: 1 / 2;
   background-color: #03A3DF;
   color: white;
   padding: 1rem;
 }
-.header img{
+header img{
   margin-left: 2rem;
 }
 nav {
@@ -42,6 +67,7 @@ nav {
 }
 nav a {
   padding: 1rem;
+  margin: .5rem;
 }
 nav a:link, a:visited, a:active {
   color: white;
@@ -51,6 +77,7 @@ nav a:hover {
   color: white;
   text-decoration: underline;
 }
+
 footer {
   grid-column: 1 / 4;
   grid-row: 6 / 7;
